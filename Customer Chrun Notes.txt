@@ -1,0 +1,119 @@
+Customer Chrun Points
+
+#The percentage of customers that discontinue using a company’s products or services during a particular time period is called a customer churn (attrition) rate. 
+Examples of customer churn includes
+	1. Cancelation of a subscription
+	2. Closure of an account
+	3. Non-renewal of a contract or service agreement
+	4. Decision to shop at another store
+	5. Use another service provider
+
+#One of the ways to calculate a churn rate is to divide the number of customers lost during a given time interval by the number of acquired customers, and then multiply that number by 100 percent. 
+#For example, if you got 150 customers and lost three last month, then your monthly churn rate is 2 percent.
+
+#n a subscription-based business, even a small rate of monthly/quarterly churn will compound quickly over time. Just 1 percent monthly churn translates to almost 12 percent yearly churn. Given that it’s far more expensive to acquire a new customer than to retain an existing one, businesses with high churn rates will quickly find themselves in a financial hole as they have to devote more and more resources to new customer acquisition.
+
+#Questions
+Will this customer churn or not?
+Will a customer renew their subscription?
+Will a user downgrade a pricing plan?
+Are there any signs of unusual customer behavior?
+The fourth question about atypical behavior signs represents a type of a classification problem called anomaly detection. Anomaly detection is about identifying outliers – data points that significantly deviate from the rest of the data.
+
+# Here are 6 time-tested steps to make sure you are focusing on retaining your customers — we are going to focus only on step 2 and parts of step 3 for this article. While at this, remember that this is not about blaming the product or customer success group for the churn but to create a strategy to improve customer retention.
+	1. Gather available customer behavior, transactions, demographics data and usage patterns.
+	2. Utilize these data points to predict customer segments who are likely to churn.
+	3. Create a model to pattern the risk tolerance of the business with respect to churn probability.
+	4. Design an intervention model to consider how the level of intervention could affect the churn percentages and customer lifetime value (CLV).
+	5. Implement effective experimentation across multiple customer segments for reducing churn and promoting retention.
+	6. Rinse and Repeat from Step 1 (cognitive churn management is a continuous process and not once a year exercise).
+
+
+===== LINKS ======
+***https://towardsdatascience.com/predict-customer-churn-the-right-way-using-pycaret-8ba6541608ac#:~:text=One%20of%20the%20ways%20to,churn%20rate%20is%205%20percent.
+
+https://www.avaus.com/blog/predicting-customer-churn/
+
+***https://www.optimove.com/resources/learning-center/customer-churn-prediction-and-prevention
+	- Talks about CLV (Customers Lifetime value)
+
+********https://neptune.ai/blog/how-to-implement-customer-churn-prediction
+
+***https://sphinx-dat.readthedocs.io/en/latest/02-01-exploring-distributions.html
+	- Talks about all sorts of distribution
+
+
+
+
+====== Tasks todo in the dataset =====
+1. Study the behaviour of "Customer Status" = Churned and analysis their behaviour
+
+2. Study the behaviour of "Customer Status" = Stayed and analysis their behaviour
+	a. also depeneds on how long they stayed which can be identified from "Tenure in Months"
+	
+3. Make a skew diagram and find mean,median,mode of Tenure in Months which would tell us how long a customer stays
+	a. differentiate between churned/stayed
+	
+4. Find out which demographic looses least/most people.
+
+5. Find out the usage pattern of the people.
+	a. mostly which services are used the most
+
+6. Find out churn probability 
+
+7. Create a month on month tenure vs Monthly Charge
+	a. you know this data ends at 2nd Quarter of 2022 so you can find the starting month of those customers approx.
+	
+8. Find out whats the % Quarterly revenue the customers ("Customer Status" = Stayed) are generating currently
+
+9. Find all categorical and numerical columns [xxxxxxxxxxxxxxxx]
+
+10. Make a pie chart of Customer Status  (to be called churn rate) [xxxxxxxxxxxxxxxx]
+	a. Not churned% -> stayed/joined
+	b. Churned% -> churned
+	
+11. Plot Bar chart
+	- Churn rate by Dependents
+	- Churn rate by Senior Citizen/Young Citizen
+	- 
+	
+12. Use Scatterplot(using laitude and longitude) to mark the customers on bases on customer status [xxxxxxxxxxxxxxxx]
+
+	
+13. Make a bar chart for all Services
+
+14. Make bar chart of : (the conclusion might come to : The shorter the contract, the higher the churn rate)[xxxxxxxxxxxxxxxx]
+	a. Contract
+	b. Paperless Billing
+	c. Payment Method
+
+15. Plot Histogram of all numeric features
+	- Tenure 
+	- 
+
+
+=== what to show in dashboard
+Cards
+1. Total Revenue [Done]
+2. Churned Customers [Done]
+3. Churn Rate% [Done]
+4. Present Customers [Done]
+5. New Customers [Done]
+6. Total Refunds [Done]
+7. Revenue loss%
+
+
+
+
+Graphs/ Analysis
+- Top 5 city with most churned customers [Done]
+- Contract bar chart (people most churned if they use month-on-month contract) [Done]
+- Need to find a way to show yes/no count of each services in a vertical bar chart
+- pie chart of  people churned/stayed/joined [Done]
+- Churn reasons (tree chart) [Done]
+- Which Marketing Offer resulted in least customer churn [Done]
+- Internet type( Fiber Optics got much more churn rate)
+- Tenure (what tenure ranges lies the most no of churned customers)
+- Number of customers and total charges by service used (see below pic)
+https://media-exp2.licdn.com/dms/image/C5622AQEZ9dW6Ry8ztg/feedshare-shrink_800/0/1656344456082?e=1660176000&v=beta&t=Qp4aEl9kTPruMQC_lBLaS0xLY3Pj834ZlF_m378dLX0
+- Average monthly charge by tenure(see above pic)
